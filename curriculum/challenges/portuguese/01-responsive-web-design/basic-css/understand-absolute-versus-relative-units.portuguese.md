@@ -20,7 +20,7 @@ tests:
   - text: Sua classe de <code>red-box</code> deve ter uma propriedade de <code>padding</code> .
     testString: 'assert($(".red-box").css("padding-top") != "0px" && $(".red-box").css("padding-right") != "0px" && $(".red-box").css("padding-bottom") != "0px" && $(".red-box").css("padding-left") != "0px", "Your <code>red-box</code> class should have a <code>padding</code> property.");'
   - text: 'Sua classe de <code>red-box</code> deve fornecer elementos de 1,5n de <code>padding</code> .'
-    testString: 'assert(code.match(/\.red-box\s*?{\s*?.*?\s*?.*?\s*?padding:\s*?1\.5em/gi), "Your <code>red-box</code> class should give elements 1.5em of <code>padding</code>.");'
+    testString: 'assert(code.match(/\.red-box\s*?{(\s|.)*?padding:\s*?1\.5em/gi), "Your <code>red-box</code> class should give elements 1.5em of <code>padding</code>.");'
 
 ```
 
